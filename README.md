@@ -9,10 +9,12 @@ python-logging-loki
 Python logging handler for Loki.  
 https://grafana.com/loki
 
+Forked from https://github.com/GreyZmeem/python-logging-loki/
+
 Installation
 ============
 ```bash
-pip install python-logging-loki
+pip install git+https://github.com/msylw/python-logging-loki.git
 ```
 
 Usage
@@ -40,7 +42,7 @@ logger.error(
 
 Example above will send `Something happened` message along with these labels:
 - Default labels from handler
-- Message level as `serverity`
+- Message level as `level`
 - Logger's name as `logger` 
 - Labels from `tags` item of `extra` dict
 
